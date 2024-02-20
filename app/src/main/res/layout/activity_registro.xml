@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/negrosuave">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logoprincipal"
+            android:scaleType="centerInside"
+            android:layout_gravity="start"
+            android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="favorites"
+            android:textSize="20dp"
+            android:textColor="@color/rojo"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvimagenperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/imagenperfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logousuario"/>
+    </androidx.cardview.widget.CardView>
+    <GridLayout
+        android:id="@+id/conjuntoFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/negrosuave"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil1"
+                android:elevation="100dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil2"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil3"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil4"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil5"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/foto6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/fotoperfil6"/>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Introduzca su usuario"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/edtcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Introduzca su correo"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edtcontra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Introduzca su contraseña"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/botonregistrar"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrar"
+        android:background="@drawable/botonredondeado"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProyectoFinalDI" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="SplashTheme" parent="Base.Theme.ProyectoFinalDI">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+    <style name="Theme.ProyectoFinalDI" parent="Base.Theme.ProyectoFinalDI" />
+</resources>
